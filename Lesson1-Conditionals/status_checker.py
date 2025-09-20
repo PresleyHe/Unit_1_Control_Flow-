@@ -25,7 +25,7 @@ if 16 <= age <= 100 :
 
 
 # TODO: Check enrollment eligibility (age >= 18 AND gpa >= 2.0)
-
+ 
 
 # TODO: Check voting eligibility (age >= 18)
 
