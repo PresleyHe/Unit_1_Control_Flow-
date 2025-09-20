@@ -21,19 +21,19 @@
 # ========================================
     
 
-age_input = int(input("Enter your age: "))
-# age = int(age_input)
-if age_input :
-    if 0 <= age_input <= 12:
-        print("Your are a child!")
-    elif 13 <= age_input <=19 :
-        print("You are a teenager") 
-    elif 20 <= age_input <=64 :
-        print("You are an adult") 
-    elif age_input >=65:
-        print("You are a Senior")
-    else: print("Please enter a valid age!") 
-else: print("Please enter a valid age!")
+# age_input = int(input("Enter your age: "))
+# # age = int(age_input)
+# if age_input :
+#     if 0 <= age_input <= 12:
+#         print("Your are a child!")
+#     elif 13 <= age_input <=19 :
+#         print("You are a teenager") 
+#     elif 20 <= age_input <=64 :
+#         print("You are an adult") 
+#     elif age_input >=65:
+#         print("You are a Senior")
+#     else: print("Please enter a valid age!") 
+# else: print("Please enter a valid age!")
 
 # ========================================
 # SECTION 3: STUDENT STATUS CHECKER
@@ -48,3 +48,31 @@ else: print("Please enter a valid age!")
 # ========================================
 # SECTION 5: WEATHER DECISION SYSTEM
 # ========================================
+
+
+# ========================================
+# PART 5: TRUTH VALUE TESTING CHALLENGE
+# Slide: "PRACTICE: What's the Output?"
+# ========================================
+
+
+
+# ========================================
+# PART 6: AGE CATEGORY CLASSIFIER
+# ========================================
+
+
+age = 17
+gpa = 3.8
+has_license = True
+
+can_drive = age >= 16 and has_license
+honor_roll = gpa >= 3.5
+eligible = can_drive and honor_roll and age >= 17
+
+print(f"Can drive: {can_drive}")
+print(f"Honor Roll: {honor_roll}")
+print(f"Eligible: {eligible}")
+
+if eligible:
+    print("Scholarship candidate")
