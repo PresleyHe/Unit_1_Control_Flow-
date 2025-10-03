@@ -1,0 +1,67 @@
+#syntax:
+'''
+initialize variable
+while condition(test variable):
+    code block
+    increment/decrement variable
+'''
+
+# num = 5 
+# while num >= 0:
+#     print(num)
+#     num -= 1
+    
+total = 0
+num = 1 
+# while num <=10:
+#     total += num #(total = total + num)
+#     num += 1
+    
+# print(total)
+    
+
+while num <= 10:
+    total += num
+    if num < 10:
+        print(num, end="+")
+    else:
+        print(num, end="=")
+    num += 1
+print(total)
+
+#sum of digits
+# take a user input as int, and sum then digit of it 
+# number = input("Enter a number:") #1234
+sum = 0
+# for char in number:
+#     print(f"{char} {type(char)}")
+#     sum += int(char)
+# print(f"Total: {sum}")
+# number = int(input("Enter a number:"))
+i = 0
+# while i < len(number):
+#     sum += int(number[i])
+#     i += 1
+# print(f"Total: {sum}")
+
+
+#Algorithm - sum of digits(as ints)
+n = int(input("Enter a number:"))
+number = n
+sum = 0
+while number > 0:
+    #get the last digit
+    digit = number % 10
+    sum += digit #add to sum
+    number = number // 10 #removing the last digit
+print(f"The sum of digits {n}: {sum}")
+#Algorithm - count digits (as ints)
+# number = int(input("Enter a number:"))
+number = 54321
+n = number
+count = 0
+while number > 0:
+    digit = number % 10
+    count += 1
+    number = number // 10
+print(f"The digits {count} in {n}")
